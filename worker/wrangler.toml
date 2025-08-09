@@ -1,0 +1,11 @@
+name = "kotlin-worker-multiplatform"
+account_id = "0c668e8ef13fa7a7f8448cca39424722"
+workers_dev = true
+compatibility_date = "2025-08-03"
+main = "worker.js"
+
+[ai]
+binding = "ai"
+
+[observability]
+enabled = true

@@ -1,0 +1,14 @@
+{
+  "name": "kotlin-worker-hello-world",
+  "version": "1.0.0",
+  "description": "Kotlin hello world for Cloudflare Workers",
+  "main": "build/compileSync/js/main/productionExecutable/kotlin/KotlinWorker-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "{{ authors }}",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.28.0"
+  }
+}

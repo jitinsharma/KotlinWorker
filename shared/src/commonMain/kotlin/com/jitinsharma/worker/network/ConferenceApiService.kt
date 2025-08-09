@@ -10,11 +10,13 @@ import io.ktor.http.contentType
 
 class ConferenceApiService {
     private val httpClient = HttpClient.instance
+    private val baseUrl = ""
 
     suspend fun getTransformedConferences(): Result<List<ConferenceModel>> {
         return try {
+
             val conferences: List<ConferenceModel> = httpClient
-                .get("https://kotlin-worker-multiplatform.jitins2892.workers.dev")
+                .get(baseUrl)
                 .body()
             Result.success(conferences)
         } catch (e: Exception) {
@@ -25,7 +27,7 @@ class ConferenceApiService {
     suspend fun getAISummary(conferenceUrl: String): Result<AITask> {
         return try {
             val request = AIRequest(url = conferenceUrl)
-            val response = httpClient.post("https://kotlin-worker-multiplatform.jitins2892.workers.dev/") {
+            val response = httpClient.post(baseUrl) {
                 contentType(ContentType.Application.Json)
                 setBody(request)
             }

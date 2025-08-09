@@ -123,6 +123,21 @@ wrangler deploy
 # Or run directly in Android Studio
 ```
 
+## 📷 Screenshots
+
+### Android App
+<div align="center">
+  <img src="conference-list.png" alt="Conference List" width="300"/>
+  <img src="conference-ai-overview.png" alt="AI Overview Bottom Sheet" width="300"/>
+</div>
+
+### Cloudflare Worker Configuration
+<div align="center">
+  <img src="worker-binding.png" alt="Worker AI Binding Configuration" width="600"/>
+</div>
+
+*Cloudflare Worker AI binding configuration in the dashboard*
+
 ## 📱 Usage
 
 1. **Launch the Android app**
